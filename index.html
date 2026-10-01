@@ -1,0 +1,1018 @@
+<!doctype html>
+<!--
+  Como Desk 117 — coworking a Lipomo (CO)
+  ---------------------------------------
+  DA COMPLETARE prima di pubblicare (cerca "DA INSERIRE" nei file):
+  - Ragione sociale e P.IVA nel footer (obbligatori) e in privacy.html
+  - Email di contatto (sito + privacy.html)
+  - Dominio: aggiungere og:url, og:image e "url" nel JSON-LD; creare sitemap.xml
+  - Manca una foto della sala riunioni (vedi cartella Foto/Sala Riunioni*)
+  - Con il dominio: og:image → https://www.DOMINIO.it/img/hero-open-space.jpg
+  - Link social, se presenti
+-->
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Como Desk 117 — Coworking a Lipomo (Como)</title>
+<meta name="description" content="Como Desk 117 è lo spazio di coworking a Lipomo (Como): postazioni attrezzate, uffici privati, sala riunioni, terrazza e parcheggio gratuito. A tre chilometri dal centro di Como.">
+<meta name="theme-color" content="#1F3A34">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='9' fill='%23B9852E'/%3E%3Crect x='4' y='4' width='56' height='56' rx='6' fill='%23FFFFFF'/%3E%3Crect x='8.5' y='8.5' width='47' height='47' rx='4' fill='none' stroke='%23B9852E' stroke-width='2'/%3E%3Ctext x='32' y='44' font-family='Arial Narrow,Arial,sans-serif' font-weight='700' font-size='26' fill='%23141414' text-anchor='middle'%3E117%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Como Desk 117">
+<meta property="og:title" content="Como Desk 117 — Coworking a Lipomo (Como)">
+<meta property="og:description" content="Postazioni attrezzate, uffici privati, sala riunioni, terrazza e parcheggio gratuito a 3 km dal centro di Como.">
+<!-- DA INSERIRE dopo l'acquisto del dominio:
+<meta property="og:url" content="https://www.DOMINIO.it/">
+<meta property="og:image" content="https://www.DOMINIO.it/og-image.jpg">
+<link rel="canonical" href="https://www.DOMINIO.it/">
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Como Desk 117",
+  "description": "Spazio di coworking a Lipomo (Como) con postazioni, uffici privati, sala riunioni e terrazza.",
+  "telephone": "+39 338 3820196",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via E. Cantaluppi 117",
+    "addressLocality": "Lipomo",
+    "postalCode": "22030",
+    "addressRegion": "CO",
+    "addressCountry": "IT"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
+  "priceRange": "€€"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&family=Big+Shoulders+Text:wght@500;600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #EFEBDD;
+    --surface: #F8F6EE;
+    --text: #1E2A22;
+    --text-muted: #57624F;
+    --ink: #1F3A34;
+    --accent: #B9852E;
+    --on-accent: #1E1506;
+    --line: rgba(30,42,34,0.18);
+    --line-strong: rgba(30,42,34,0.32);
+
+    --font-display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+    --font-label: "Big Shoulders Text", "Arial Narrow", sans-serif;
+    --font-body: "Karla", "Segoe UI", sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #121810;
+      --surface: #182018;
+      --text: #E9E4D2;
+      --text-muted: #9FAB96;
+      --ink: #CFE0D3;
+      --accent: #E0A94A;
+      --on-accent: #1E1506;
+      --line: rgba(233,228,210,0.16);
+      --line-strong: rgba(233,228,210,0.28);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #121810;
+    --surface: #182018;
+    --text: #E9E4D2;
+    --text-muted: #9FAB96;
+    --ink: #CFE0D3;
+    --accent: #E0A94A;
+    --on-accent: #1E1506;
+    --line: rgba(233,228,210,0.16);
+    --line-strong: rgba(233,228,210,0.28);
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  }
+
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{ color: inherit; }
+
+  .wrap{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .eyebrow{
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  h1, h2, h3{
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    text-wrap: balance;
+    margin: 0;
+    color: var(--ink);
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 24px;
+  }
+  .brand{
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1;
+  }
+  .brand{ display: block; flex-shrink: 0; }
+  .brand:focus-visible{ outline: 2px solid var(--accent); outline-offset: 4px; }
+  .logo{ display: block; height: 64px; width: auto; }
+  @media (max-width: 420px){ .logo{ height: 54px; } }
+  .logo-ink{ fill: var(--ink); }
+  .logo-paper{ fill: var(--bg); }
+  .logo-acc{ fill: var(--accent); }
+  .logo-muted{ fill: var(--text-muted); }
+  .logo-line{ fill: none; stroke: var(--ink); }
+  .logo-line-acc{ fill: none; stroke: var(--accent); }
+  .logo-white{ fill: #FFFFFF; }
+  .logo-black{ fill: #141414; }
+  .logo-dsp{ font-family: var(--font-display); font-weight: 700; }
+  .logo-lbl{ font-family: var(--font-label); font-weight: 600; }
+
+  .links{
+    display: flex;
+    gap: 22px;
+    list-style: none;
+    margin: 0; padding: 0;
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .links a{
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .links a:hover, .links a:focus-visible{ border-color: var(--accent); }
+
+  .btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 1px solid var(--ink);
+    white-space: nowrap;
+  }
+  .btn:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
+  .btn-solid{
+    background: var(--accent);
+    color: var(--on-accent);
+    border-color: var(--accent);
+    transition: filter 0.15s ease;
+  }
+  .btn-solid:hover{ filter: brightness(1.08); }
+  .btn-outline{
+    background: transparent;
+    color: var(--ink);
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .btn-outline:hover{ background: var(--ink); color: var(--bg); }
+
+  .nav-cta{ display:flex; }
+  .nav-links-mobile-hide{ display:flex; }
+  @media (max-width: 880px){
+    .nav-links-mobile-hide{ display:none; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position: relative;
+    padding: 72px 0 0;
+    overflow: hidden;
+  }
+  .hero-grid-bg{
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(90deg, var(--line) 0 1px, transparent 1px 96px),
+      repeating-linear-gradient(0deg, var(--line) 0 1px, transparent 1px 96px);
+    opacity: 0.5;
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
+    pointer-events: none;
+  }
+  .hero-inner{ position: relative; }
+  .hero h1{
+    font-size: clamp(40px, 6vw, 76px);
+    max-width: 14ch;
+    margin-top: 18px;
+  }
+  .hero .lede{
+    max-width: 46ch;
+    margin-top: 22px;
+    font-size: 19px;
+    color: var(--text-muted);
+  }
+  .hero-actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 34px;
+  }
+
+  .hero-photo{
+    margin: 48px 0 0;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+  }
+  .hero-photo img{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+    object-position: 50% 60%;
+  }
+  @media (max-width: 640px){
+    .hero-photo img{ aspect-ratio: 4 / 3; object-position: 35% 60%; }
+  }
+
+  .directory{
+    margin-top: 0;
+    border-top: 1px solid var(--line-strong);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .directory dl{
+    margin: 0;
+    padding: 18px 22px 22px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .directory dl:last-child{ border-right: none; }
+  .directory dt{
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+  .directory dd{
+    margin: 6px 0 0;
+    font-family: var(--font-label);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--ink);
+    text-transform: uppercase;
+  }
+  @media (max-width: 640px){
+    .directory{ grid-template-columns: 1fr; }
+    .directory dl{ border-right: none; }
+  }
+
+  /* ---------- Sections ---------- */
+  section{ padding: 88px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type{ border-bottom: none; }
+
+  .section-head{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+    align-items: end;
+    margin-bottom: 44px;
+  }
+  .section-head h2{ font-size: clamp(30px, 4vw, 44px); }
+  .section-head .desc{ color: var(--text-muted); max-width: 52ch; }
+  @media (max-width: 720px){
+    .section-head{ grid-template-columns: 1fr; }
+  }
+
+  .reveal{
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .reveal.is-visible{ opacity: 1; transform: none; }
+
+  /* About */
+  .about-body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 48px;
+  }
+  .about-body p{ font-size: 17px; }
+  .about-body p + p{ margin-top: 16px; }
+  .about-side{
+    border-left: 1px solid var(--line-strong);
+    padding-left: 28px;
+  }
+  .about-side .eyebrow{ margin-bottom: 10px; display:block; }
+  .about-side ul{ margin: 0; padding: 0; list-style: none; }
+  .about-side li{
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+    color: var(--text-muted);
+  }
+  @media (max-width: 780px){
+    .about-body{ grid-template-columns: 1fr; }
+    .about-side{ border-left: none; padding-left: 0; border-top: 1px solid var(--line-strong); padding-top: 20px; }
+  }
+
+  /* Gallery */
+  .gallery{
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  .gallery figure{ margin: 0; }
+  .gallery .wide{ grid-column: span 2; }
+  .gallery button{
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    cursor: zoom-in;
+    overflow: hidden;
+  }
+  .gallery button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
+  .gallery img{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  /* la foto larga prende l'altezza della riga, decisa dalle foto 4:3 accanto */
+  .gallery .wide{ display: flex; flex-direction: column; }
+  .gallery .wide button{ flex: 1; position: relative; }
+  .gallery .wide img{ position: absolute; inset: 0; height: 100%; aspect-ratio: auto; }
+  .gallery button:hover img{ transform: scale(1.03); }
+  .gallery figcaption{
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    padding-top: 8px;
+    line-height: 22px;
+  }
+  @media (max-width: 760px){
+    .gallery{ grid-template-columns: repeat(2, 1fr); }
+    .gallery .wide{ grid-column: span 2; }
+    .gallery .wide button{ flex: none; position: static; }
+    .gallery .wide img{ position: static; aspect-ratio: 16 / 9; height: auto; }
+  }
+
+  .lightbox{
+    border: none;
+    padding: 0;
+    background: transparent;
+    max-width: min(1200px, 94vw);
+    max-height: 92vh;
+  }
+  .lightbox::backdrop{ background: rgba(10,14,11,0.88); }
+  .lightbox img{ display: block; max-width: 100%; max-height: 84vh; margin: 0 auto; }
+  .lightbox p{
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    color: #E9E4D2;
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 14px;
+  }
+  .lightbox button{
+    background: none;
+    border: 1px solid rgba(233,228,210,0.5);
+    color: #E9E4D2;
+    font: inherit;
+    padding: 4px 12px;
+    cursor: pointer;
+  }
+
+  /* Services grid */
+  .services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--line-strong);
+    border-left: 1px solid var(--line-strong);
+  }
+  .service{
+    padding: 30px 26px;
+    border-right: 1px solid var(--line-strong);
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .service svg{
+    width: 34px; height: 34px;
+    stroke: var(--ink);
+    fill: none;
+    stroke-width: 1.4;
+    margin-bottom: 18px;
+  }
+  .service h3{
+    font-size: 19px;
+    text-transform: none;
+    letter-spacing: 0.01em;
+  }
+  .service p{
+    margin: 8px 0 0;
+    font-size: 14.5px;
+    color: var(--text-muted);
+  }
+  @media (max-width: 860px){
+    .services{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px){
+    .services{ grid-template-columns: 1fr; }
+  }
+  .included{
+    margin: 28px 0 0;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--text-muted);
+    font-size: 14.5px;
+  }
+  .included .eyebrow{ margin-right: 10px; }
+
+  /* Pricing */
+  .tariff{
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .tariff:first-of-type{ border-top: 1px solid var(--line-strong); }
+  .tariff summary{
+    cursor: pointer;
+    list-style: none;
+    padding: 20px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+  }
+  .tariff summary::-webkit-details-marker{ display: none; }
+  .tariff summary .name{
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--ink);
+  }
+  .tariff summary .from{
+    font-size: 13.5px;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .tariff summary::after{
+    content: "+";
+    font-family: var(--font-display);
+    font-size: 22px;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+  .tariff[open] summary::after{ transform: rotate(45deg); }
+  .tariff-body{ padding: 0 2px 28px; }
+  .tariff-sub{
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 20px 0 8px;
+  }
+  .tariff-sub:first-child{ margin-top: 0; }
+  .pricelist{ list-style: none; margin: 0; padding: 0; }
+  .pricelist li{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 7px 0;
+    border-bottom: 1px dotted var(--line-strong);
+    font-size: 14.5px;
+  }
+  .pricelist li span:last-child{
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .tariff-note{
+    color: var(--text-muted);
+    font-size: 13.5px;
+    margin: 16px 0 0;
+  }
+  .pricing-foot{
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .pricing-foot p{ color: var(--text-muted); font-size: 14.5px; max-width: 44ch; margin: 0; }
+
+  /* Getting here */
+  .access{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+  .access-col h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-family: var(--font-label);
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+  .access-col p{ color: var(--text-muted); margin: 0; }
+  .map-btn{ margin-top: 36px; }
+  @media (max-width: 720px){
+    .access{ grid-template-columns: 1fr; gap: 28px; }
+  }
+
+  /* Contact */
+  .contact-grid{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .contact-phone{
+    font-family: var(--font-display);
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--ink);
+    text-decoration: none;
+    display: inline-block;
+  }
+  .contact-actions{ display:flex; gap: 14px; flex-wrap: wrap; margin-top: 26px; }
+  .contact-card{
+    border: 1px solid var(--line-strong);
+    padding: 26px;
+  }
+  .contact-card .eyebrow{ display:block; margin-bottom: 12px; }
+  .contact-card address{ font-style: normal; color: var(--text-muted); line-height: 1.7; }
+  @media (max-width: 780px){
+    .contact-grid{ grid-template-columns: 1fr; }
+  }
+
+  footer{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-family: var(--font-label);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Como Desk 117 — coworking a Lipomo, torna all'inizio">
+      <svg class="logo" viewBox="78 0 262 120" aria-hidden="true">
+        <text class="logo-ink logo-dsp" x="184" y="57" text-anchor="end" font-size="52" letter-spacing="1">COMO</text>
+        <text class="logo-acc logo-dsp" x="184" y="111" text-anchor="end" font-size="52" letter-spacing="1">DESK</text>
+        <rect class="logo-acc" x="202" y="2" width="136" height="116" rx="12"/>
+        <rect class="logo-white" x="207" y="7" width="126" height="106" rx="8"/>
+        <rect class="logo-line-acc" x="213" y="13" width="114" height="94" rx="5" stroke-width="2"/>
+        <text class="logo-black logo-dsp" x="270" y="89" text-anchor="middle" font-size="74">117</text>
+
+      </svg>
+
+
+    </a>
+    <ul class="links nav-links-mobile-hide">
+      <li><a href="#spazio">Lo spazio</a></li>
+      <li><a href="#servizi">Spazi</a></li>
+      <li><a href="#prezzi">Prezzi</a></li>
+      <li><a href="#arrivare">Come arrivare</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-solid" href="tel:3383820196">Chiama ora</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" style="border-bottom:1px solid var(--line);">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <span class="eyebrow">Via E. Cantaluppi 117 — Lipomo (CO)</span>
+      <h1>Il piano di lavoro è già pronto.</h1>
+      <p class="lede">Scrivanie attrezzate, uffici privati e sala riunioni al primo piano di un edificio comodo da raggiungere, con parcheggio gratuito davanti alla porta e una terrazza dove staccare senza allontanarsi troppo.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="tel:3383820196">Chiama ora — 338 3820196</a>
+        <a class="btn btn-outline" href="https://wa.me/393383820196?text=Ciao%2C%20vorrei%20informazioni%20su%20Como%20Desk%20117" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+      </div>
+
+      <figure class="hero-photo">
+        <img src="img/hero-open-space.jpg" width="1800" height="1152" alt="Open space di Como Desk 117 con postazioni separate da pannelli fonoassorbenti e phone booth in vetro">
+      </figure>
+
+      <div class="directory">
+        <dl>
+          <dt>Orari</dt>
+          <dd>Lun–Ven 9:00–19:00</dd>
+        </dl>
+        <dl>
+          <dt>Parcheggio</dt>
+          <dd>Gratuito, riservato</dd>
+        </dl>
+        <dl>
+          <dt>Distanza da Como</dt>
+          <dd>3 km circa</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="spazio">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">01 — Lo spazio</span>
+        <h2>Un primo piano pensato per lavorarci davvero</h2>
+      </div>
+      <div class="about-body reveal">
+        <div>
+          <p>Lipomo è a circa tre chilometri dal centro di Como, lungo la direttrice verso Lecco: comodo da raggiungere in auto — con parcheggio gratuito riservato proprio davanti all'ingresso, adatto anche a soste lunghe — e in autobus, con una fermata a un centinaio di metri sulle linee per Como, Lecco, Erba, Cantù e Albavilla.</p>
+          <p>Il coworking occupa il primo piano dell'edificio: 150 metri quadrati dedicati esclusivamente al lavoro condiviso, tra postazioni in open space, uffici privati di diverse metrature, sala riunioni, sala colloqui e un phone booth per le chiamate che richiedono un po' di silenzio. Fuori, una terrazza coperta e raggiunta dal WiFi è a disposizione per una pausa o per un piccolo evento all'aperto.</p>
+        </div>
+        <div class="about-side">
+          <span class="eyebrow">Nei dintorni</span>
+          <ul>
+            <li>Farmacia a pochi passi</li>
+            <li>Supermercato nelle vicinanze</li>
+            <li>Bar e ristoranti in zona</li>
+            <li>Fermata bus a ~100 m</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gallery reveal">
+        <figure class="wide"><button type="button"><img src="img/terrazza.jpg" width="1400" height="1050" loading="lazy" alt="Terrazza con tavolo, ombrellone e vista sulle colline"></button><figcaption>Terrazza</figcaption></figure>
+        <figure><button type="button"><img src="img/edificio-terrazza.jpg" width="825" height="1100" loading="lazy" alt="L'edificio visto dalla terrazza, con ombrelloni e tavolo all'aperto"></button><figcaption>L'edificio</figcaption></figure>
+        <figure><button type="button"><img src="img/postazioni.jpg" width="1200" height="900" loading="lazy" alt="Postazioni in open space con pannelli divisori e sedie ergonomiche"></button><figcaption>Postazioni</figcaption></figure>
+        <figure><button type="button"><img src="img/ufficio-3-persone.jpg" width="1200" height="900" loading="lazy" alt="Ufficio privato luminoso con tre scrivanie e due finestre"></button><figcaption>Ufficio per 3 persone</figcaption></figure>
+        <figure><button type="button"><img src="img/ufficio-2-persone.jpg" width="825" height="1100" loading="lazy" alt="Ufficio privato con due scrivanie bianche e armadio"></button><figcaption>Ufficio per 2 persone</figcaption></figure>
+        <figure><button type="button"><img src="img/ufficio-privato.jpg" width="1200" height="800" loading="lazy" alt="Ufficio d'angolo con scrivania, due sedute per ospiti e vista sul verde"></button><figcaption>Ufficio privato</figcaption></figure>
+        <figure><button type="button"><img src="img/sala-colloqui.jpg" width="1200" height="900" loading="lazy" alt="Sala colloqui con poltrone colorate, tappeto e tavolino in legno"></button><figcaption>Sala colloqui</figcaption></figure>
+        <figure><button type="button"><img src="img/sala-benessere.jpg" width="1200" height="900" loading="lazy" alt="Sala benessere con lettino, lavabo e grande finestra sulle colline"></button><figcaption>Sala benessere olistico</figcaption></figure>
+        <figure><button type="button"><img src="img/aula-formazione.jpg" width="1200" height="900" loading="lazy" alt="Aula formazione con tavolo, lavagna e sedute per i partecipanti"></button><figcaption>Aula formazione</figcaption></figure>
+        <figure><button type="button"><img src="img/area-relax.jpg" width="825" height="1100" loading="lazy" alt="Area relax con due poltroncine e tavolino in legno"></button><figcaption>Area relax</figcaption></figure>
+        <figure><button type="button"><img src="img/terrazza-pergola.jpg" width="825" height="1100" loading="lazy" alt="Angolo della terrazza coperto da pergola con tavolo e sedie"></button><figcaption>Terrazza coperta</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="servizi">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">02 — Spazi</span>
+        <h2>Quello che trovi al piano</h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="services reveal">
+        <div class="service">
+          <svg viewBox="0 0 24 24"><path d="M3 15h18M5 15V9h14v6M8 15v4M16 15v4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Postazioni attrezzate</h3>
+          <p>Scrivanie in open space, taglio SMART o STANDARD, pronte all'uso per chi lavora in autonomia.</p>
+        </div>
+        <div class="service">
+          <svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="0"/><circle cx="14.5" cy="12" r="0.8" fill="var(--ink)" stroke="none"/></svg>
+          <h3>Uffici privati</h3>
+          <p>Stanze indipendenti per 2, 3 o 4 persone, per chi ha bisogno di riservatezza o lavora in team.</p>
+        </div>
+        <div class="service">
+          <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="7" ry="4"/><circle cx="4" cy="12" r="1" fill="var(--ink)" stroke="none"/><circle cx="20" cy="12" r="1" fill="var(--ink)" stroke="none"/><circle cx="12" cy="6.5" r="1" fill="var(--ink)" stroke="none"/><circle cx="12" cy="17.5" r="1" fill="var(--ink)" stroke="none"/></svg>
+          <h3>Sala riunioni</h3>
+          <p>Fino a 8 persone, per incontri con clienti o sessioni di lavoro in gruppo.</p>
+        </div>
+        <div class="service">
+          <svg viewBox="0 0 24 24"><rect x="9" y="9" width="6" height="6"/><circle cx="4" cy="12" r="1" fill="var(--ink)" stroke="none"/><circle cx="20" cy="12" r="1" fill="var(--ink)" stroke="none"/><path d="M6 12h2M16 12h2" stroke-linecap="round"/></svg>
+          <h3>Sala colloqui</h3>
+          <p>Fino a 3 persone, ideale per colloqui, sedute individuali e incontri riservati.</p>
+        </div>
+        <div class="service">
+          <svg viewBox="0 0 24 24"><path d="M6 18C6 10 12 5 19 5c0 7-5 13-13 13Z" stroke-linejoin="round"/><path d="M8 16c3-3 6-6 9-9" stroke-linecap="round"/></svg>
+          <h3>Sala benessere olistico</h3>
+          <p>Uno spazio flessibile e prenotabile per i professionisti del wellness.</p>
+        </div>
+        <div class="service">
+          <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="10"/><path d="M9 19h6M12 15v4" stroke-linecap="round"/><path d="M7 9h6" stroke-linecap="round"/></svg>
+          <h3>Aula formazione</h3>
+          <p>Fino a 8 persone, per corsi e sessioni di formazione. Quotazione su richiesta.</p>
+        </div>
+        <div class="service">
+          <svg viewBox="0 0 24 24"><path d="M4 12a11 11 0 0 1 16 0M7.5 15.5a6.5 6.5 0 0 1 9 0" stroke-linecap="round"/><circle cx="12" cy="19" r="1" fill="var(--ink)" stroke="none"/><path d="M2 20h20" /></svg>
+          <h3>Terrazza con WiFi</h3>
+          <p>Coperta e connessa, per lavorare all'aperto o ospitare un piccolo evento con vista sul verde.</p>
+        </div>
+        <div class="service">
+          <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18"/><path d="M8 8h5.5a2 2 0 0 1 0 4H8V8Zm0 4h6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Parcheggio gratuito</h3>
+          <p>Ampio, riservato all'edificio, senza costi aggiuntivi anche per chi resta tutto il giorno.</p>
+        </div>
+        <div class="service">
+          <svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18"/><rect x="9.5" y="6" width="5" height="5"/><path d="M9.5 15h5" stroke-linecap="round"/></svg>
+          <h3>Phone booth</h3>
+          <p>Cabine insonorizzate per chiamate e videocall riservate, senza disturbare gli altri coworker.</p>
+        </div>
+      </div>
+      <p class="included reveal"><span class="eyebrow">Sempre incluso</span> Wi-Fi in fibra ultraveloce · Stampante 3D · Climatizzazione · Pulizie · Cassettiera con chiave · Sedia ergonomica · Area relax</p>
+    </div>
+  </section>
+
+  <section id="prezzi">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">03 — Prezzi</span>
+        <h2>Il listino, senza sorprese</h2>
+      </div>
+
+      <div class="reveal">
+        <details class="tariff">
+          <summary><span class="name">Postazioni di lavoro</span><span class="from">da 15€ + iva</span></summary>
+          <div class="tariff-body">
+            <p class="tariff-sub">Smart — scrivania 120×70 cm</p>
+            <ul class="pricelist">
+              <li><span>Ingresso giornaliero</span><span>15€ + iva</span></li>
+              <li><span>Abbonamento settimanale</span><span>60€ + iva</span></li>
+              <li><span>Carnet 10 ingressi (3 mesi)</span><span>145€ + iva</span></li>
+              <li><span>Abbonamento mensile</span><span>155€ + iva</span></li>
+            </ul>
+            <p class="tariff-sub">Standard — scrivania 160×80 cm</p>
+            <ul class="pricelist">
+              <li><span>Ingresso giornaliero</span><span>20€ + iva</span></li>
+              <li><span>Abbonamento settimanale</span><span>80€ + iva</span></li>
+              <li><span>Carnet 10 ingressi (3 mesi)</span><span>165€ + iva</span></li>
+              <li><span>Abbonamento mensile</span><span>185€ + iva</span></li>
+            </ul>
+            <p class="tariff-note">Disponibili anche abbonamenti per giornate fisse nell'arco della settimana.</p>
+          </div>
+        </details>
+
+        <details class="tariff">
+          <summary><span class="name">Uffici privati indipendenti</span><span class="from">da 170€ + iva</span></summary>
+          <div class="tariff-body">
+            <ul class="pricelist">
+              <li><span>2 persone — settimanale</span><span>da 170€ + iva</span></li>
+              <li><span>2 persone — mensile</span><span>da 530€ + iva</span></li>
+              <li><span>3 persone — settimanale</span><span>da 205€ + iva</span></li>
+              <li><span>3 persone — mensile</span><span>da 630€ + iva</span></li>
+              <li><span>4 persone — settimanale</span><span>da 230€ + iva</span></li>
+              <li><span>4 persone — mensile</span><span>da 690€ + iva</span></li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="tariff">
+          <summary><span class="name">Ufficio a giornata/ore</span><span class="from">da 16€ + iva</span></summary>
+          <div class="tariff-body">
+            <ul class="pricelist">
+              <li><span>1 ora</span><span>16€ + iva</span></li>
+              <li><span>2 ore</span><span>24€ + iva</span></li>
+              <li><span>4 ore</span><span>40€ + iva</span></li>
+              <li><span>Giornata intera</span><span>70€ + iva</span></li>
+              <li><span>Giornata successiva consecutiva</span><span>25€ + iva</span></li>
+            </ul>
+            <p class="tariff-sub">Carnet e abbonamenti mensili</p>
+            <ul class="pricelist">
+              <li><span>Carnet 4 mezze giornate (3 mesi)</span><span>150€ + iva</span></li>
+              <li><span>Carnet 3 giornate intere (3 mesi)</span><span>180€ + iva</span></li>
+              <li><span>1 giorno/settimana al mese</span><span>150€ + iva</span></li>
+              <li><span>2 giorni/settimana al mese</span><span>250€ + iva</span></li>
+              <li><span>3 giorni/settimana al mese</span><span>350€ + iva</span></li>
+              <li><span>4 giorni/settimana al mese</span><span>450€ + iva</span></li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="tariff">
+          <summary><span class="name">Sala riunioni — fino a 8 persone</span><span class="from">da 16€ + iva</span></summary>
+          <div class="tariff-body">
+            <p class="tariff-sub">Fino a 3 persone</p>
+            <ul class="pricelist">
+              <li><span>Utilizzo orario</span><span>16€ + iva</span></li>
+              <li><span>2 ore consecutive</span><span>28€ + iva</span></li>
+              <li><span>4 ore consecutive</span><span>52€ + iva</span></li>
+              <li><span>Giornata intera (9:00–18:00)</span><span>90€ + iva</span></li>
+            </ul>
+            <p class="tariff-sub">Da 4 a 8 persone</p>
+            <ul class="pricelist">
+              <li><span>Utilizzo orario</span><span>28€ + iva</span></li>
+              <li><span>2 ore consecutive</span><span>50€ + iva</span></li>
+              <li><span>4 ore consecutive</span><span>78€ + iva</span></li>
+              <li><span>Giornata intera (9:00–18:00)</span><span>125€ + iva</span></li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="tariff">
+          <summary><span class="name">Sala colloqui — fino a 3 persone</span><span class="from">da 16€ + iva</span></summary>
+          <div class="tariff-body">
+            <ul class="pricelist">
+              <li><span>Utilizzo orario</span><span>16€ + iva</span></li>
+              <li><span>2 ore consecutive</span><span>24€ + iva</span></li>
+              <li><span>4 ore consecutive</span><span>40€ + iva</span></li>
+              <li><span>Giornata intera (9:00–18:00)</span><span>70€ + iva</span></li>
+            </ul>
+            <p class="tariff-sub">Carnet e abbonamenti mensili</p>
+            <ul class="pricelist">
+              <li><span>Carnet 4 mezze giornate (3 mesi)</span><span>150€ + iva</span></li>
+              <li><span>Carnet 3 giornate intere (3 mesi)</span><span>180€ + iva</span></li>
+              <li><span>1 giorno/settimana al mese</span><span>150€ + iva</span></li>
+              <li><span>2 giorni/settimana al mese</span><span>250€ + iva</span></li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="tariff">
+          <summary><span class="name">Sala benessere olistico</span><span class="from">da 16€ + iva</span></summary>
+          <div class="tariff-body">
+            <ul class="pricelist">
+              <li><span>Utilizzo orario</span><span>16€ + iva</span></li>
+              <li><span>2 ore consecutive</span><span>24€ + iva</span></li>
+              <li><span>4 ore consecutive</span><span>40€ + iva</span></li>
+              <li><span>Giornata intera (9:00–18:00)</span><span>70€ + iva</span></li>
+            </ul>
+            <p class="tariff-sub">Carnet e abbonamenti mensili</p>
+            <ul class="pricelist">
+              <li><span>Carnet 4 mezze giornate (3 mesi)</span><span>150€ + iva</span></li>
+              <li><span>Carnet 3 giornate intere (3 mesi)</span><span>180€ + iva</span></li>
+              <li><span>1 giorno/settimana al mese</span><span>150€ + iva</span></li>
+              <li><span>2 giorni/settimana al mese</span><span>250€ + iva</span></li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="tariff">
+          <summary><span class="name">Aula formazione — fino a 8 persone</span><span class="from">su richiesta</span></summary>
+          <div class="tariff-body">
+            <p class="tariff-note">Quotazione su richiesta in base a durata e allestimento necessari.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="pricing-foot reveal">
+        <p>Tutti i prezzi sono + IVA e includono sempre parcheggio, Wi-Fi in fibra, climatizzazione, pulizie e accesso alla terrazza. Contratto e pagamento sono richiesti in anticipo.</p>
+        <a class="btn btn-outline" href="https://wa.me/393383820196?text=Ciao%2C%20vorrei%20il%20listino%20prezzi%20di%20Como%20Desk%20117" target="_blank" rel="noopener">Richiedi il listino completo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="arrivare">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">04 — Come arrivare</span>
+        <h2>La strada per Lipomo</h2>
+      </div>
+      <div class="access reveal">
+        <div class="access-col">
+          <h3>In auto</h3>
+          <p>La sede è adiacente alla direttrice Como–Lecco, ben visibile e facile da raggiungere. Il parcheggio gratuito davanti all'edificio permette soste anche lunghe senza spese aggiuntive.</p>
+        </div>
+        <div class="access-col">
+          <h3>In autobus</h3>
+          <p>Le linee da e per Como, Lecco, Erba, Cantù, Albavilla e Tavernerio fermano a circa 100 metri dall'ingresso.</p>
+        </div>
+      </div>
+      <a class="btn btn-outline map-btn" href="https://www.google.com/maps/search/?api=1&query=Via+E.+Cantaluppi+117+Lipomo+Como" target="_blank" rel="noopener">Apri in Google Maps</a>
+    </div>
+  </section>
+
+  <section id="contatti">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">05 — Contatti</span>
+        <h2>Passa a vedere lo spazio</h2>
+      </div>
+      <div class="contact-grid reveal">
+        <div>
+          <p style="color:var(--text-muted); max-width: 48ch;">Chiama per una prova gratuita della postazione o scrivi due righe su WhatsApp: rispondiamo in giornata.</p>
+          <a class="contact-phone" href="tel:3383820196">338 3820196</a>
+          <div class="contact-actions">
+            <a class="btn btn-solid" href="tel:3383820196">Chiama ora</a>
+            <a class="btn btn-outline" href="https://wa.me/393383820196?text=Ciao%2C%20vorrei%20informazioni%20su%20Como%20Desk%20117" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <span class="eyebrow">Indirizzo</span>
+          <address>
+            Como Desk 117<br>
+            Via E. Cantaluppi 117<br>
+            22030 Lipomo (CO)<br><br>
+            Lun–Ven, 9:00–19:00
+          </address>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>Como Desk 117 — Via E. Cantaluppi 117, Lipomo (CO)</span>
+  <span>[DA INSERIRE: Ragione sociale] · P.IVA [DA INSERIRE] · <a href="privacy.html">Privacy</a></span>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Foto ingrandita">
+  <img src="" alt="">
+  <p><span></span><button type="button" autofocus>Chiudi ✕</button></p>
+</dialog>
+
+<script>
+  var lightbox = document.getElementById('lightbox');
+  if (lightbox.showModal) {
+    document.querySelectorAll('.gallery button').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var img = btn.querySelector('img');
+        lightbox.querySelector('img').src = img.src;
+        lightbox.querySelector('img').alt = img.alt;
+        lightbox.querySelector('span').textContent = btn.parentNode.querySelector('figcaption').textContent;
+        lightbox.showModal();
+      });
+    });
+    lightbox.addEventListener('click', function(){ lightbox.close(); });
+  }
+
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function(el){ observer.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('is-visible'); });
+  }
+</script>
+
+</body>
+</html>
